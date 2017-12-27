@@ -4,7 +4,7 @@
   "description": "Simple GraphQL Server",
   "main": "server.js",
   "scripts": {
-    "build": "babel src -d dist",
+    "build": "babel src -w -d dist",
     "dev:server": "nodemon dist/server.js",
     "json:server": "json-server --watch data.json"
   },

@@ -22,5 +22,5 @@ app.use('/graphql', (0, _expressGraphql2.default)({
 }));
 
 app.listen(4000, function () {
-  console.log('Server Running on Port 4000');
+  console.log('Server Running on Port 4000...');
 });
