@@ -4,7 +4,8 @@
   "description": "Simple GraphQL Server",
   "main": "server.js",
   "scripts": {
-    "dev:server": "nodemon server.js",
+    "build": "babel src -d dist",
+    "dev:server": "nodemon dist/server.js",
     "json:server": "json-server --watch data.json"
   },
   "repository": {
@@ -26,6 +27,8 @@
     "nodemon": "^1.14.3"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
     "eslint": "^4.14.0",
     "eslint-plugin-react": "^7.5.1"
   }

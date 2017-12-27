@@ -1,12 +1,12 @@
-const {
+import {
   GraphQLObjectType,
   GraphQLString,
   GraphQLInt,
   GraphQLSchema,
   GraphQLList,
   GraphQLNonNull
-} = require('graphql');
-const axios = require('axios');
+} from 'graphql';
+import axios from 'axios';
 
 // Customer Type
 const CustomerType = new GraphQLObjectType({
@@ -87,7 +87,7 @@ const mutation = new GraphQLObjectType({
   }
 });
 
-module.exports = new GraphQLSchema({
+export default new GraphQLSchema({
   query: RootQuery,
   mutation
 });
