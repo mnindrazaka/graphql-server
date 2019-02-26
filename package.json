@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "build": "babel src -w -d dist",
-    "dev:server": "nodemon dist/server.js",
-    "json:server": "json-server --watch data.json"
+    "dev": "nodemon dist/server.js",
+    "json": "json-server --watch data.json"
   },
   "repository": {
     "type": "git",
